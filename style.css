@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Cormorant:wght@300;400;700&display=swap');
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  width: 7%;
+  display: flex;
+  align-items: center;
+  min-width: 5rem;
+}
+
+.logo img {
+  width: 100%;
+  filter: drop-shadow(3px 3px 3px rgb(129, 126, 105))
+}
+
+header {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  font-family: 'Cormorant SC';
+  font-weight: 600;
+}
+
+.nav ul {
+  list-style-type: none;
+}
+
+.nav-left {
+  display: flex;
+  padding: 0 5rem 0 5rem;
+  align-items: center;
+  font-size: 1.75rem;
+}
+
+.nav-left li {
+  margin-right: 10rem;
+}
+
+.nav-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__wrapper {
+  width: 100%;
+}
+
+body {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  background-color: #fef0ba;
+  margin: 0px;
+}
+
+.background_image img {
+  width: 1400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.background_image {
+  width: 100%;
+  margin: 0 auto;
+  overflow: scroll;
+  max-width: 1400px;
+  position: relative;
+}
+
+.search-icon {
+  width: 3rem;
+  position: fixed;
+}
+
+/* ul li:hover {
+  display: block;
+  color: orange;
+} */
+
+.nav__wrapper {
+  overflow: scroll;
+}
+
+.nav-left li {
+  /* the height */
+  --h: 1.2em;
+
+  line-height: var(--h);
+  color: #0000;
+  text-shadow: 
+    0 var(--_i, var(--h)) white,
+    0 0 rgb(0 0 0 / calc(var(--_i, 1) * 100%) );
+  background: 
+    linear-gradient(orange 0 0) 
+    bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.nav-left li:hover {
+  --_i: 0;
+}
+
+.map-button {
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+.bath-abbey {
+  left: 39.5rem;
+  bottom: 18.5rem;
+  height: 11rem;
+  width: 11rem;
+}
+
+.the-crescent {
+  left: 2rem;
+  bottom: 45rem;
+  height: 10rem;
+  width: 35rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #a8dddf;
+  margin: auto;
+  padding: 35px;
+  width: 25rem; /* Could be more or less, depending on screen size */
+  font-size: 1.5rem;
+  padding-top: 0;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.screenreader {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.map-icon {
+  width: 5rem;
+}
+
+.directions-button {
+  width: 3rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.modal .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+footer{
+  text-align: center;
+  padding: 1.25rem;
+}

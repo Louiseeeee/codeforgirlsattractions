@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions | Bath Bound</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header class="container">
+    <div class="logo">
+        <img src="assets/Bath_Bound_logo.svg" />
+    </div>
+    <div class="nav__wrapper">
+      <nav class="nav">
+        <ul class="nav-left">
+          <li>History</li>
+          <li>Attractions</li>
+          <li>Accommodation</li>
+        </ul>
+        <ul class="nav-right">
+          <li><img class="search-icon" src="assets/search_icon.svg" /></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <div class="container">
+    <div class="background_image">
+      <img src="assets/map_of_bath.png">
+      
+      <button class="bath-abbey map-button" data-modal-toggle="bath-abbey">
+        <span class="screenreader">Bath Abbey</span>
+      </button>
+
+      <button class="the-crescent map-button" data-modal-toggle="the-crescent">
+        <span class="screenreader">The Crescent</span>
+      </button>
+    </div>
+
+    <div class="modal" data-modal="bath-abbey" data-open="false">
+      <div class="modal-content">
+        <span class="close" data-modal-toggle="bath-abbey">&times;</span>
+        <img src="assets/bath-abbey.jpeg"/>
+        <p>A moment of stillness in the beating heart of a vibrant city. A space that’s alive with music and prayer, art and history. 
+          A place where awe-inspiring architecture lifts the eyes – and raises the spirit. Bath Abbey is many things to many people. 
+          But whether you come here to join a service or a tour, light a candle or listen to music, what unites us all is a sense of wonder. 
+          There is so much to discover.</p>
+        <a class="directions-button" href="https://shorturl.at/JOTV5" target="_blank" rel="noopener noreferrer">
+          <img class="map-icon" src="assets/map-icon.svg"/>
+          <span class="screenreader">Directions</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="modal" data-modal="the-crescent" data-open="false">
+      <div class="modal-content">
+        <span class="close" data-modal-toggle="the-crescent">&times;</span>
+        <img src="assets/the-crescent.jpeg"/>
+        <p>The Royal Crescent is a row of 30 terraced houses laid out in a sweeping crescent. Built between 1767 and 1774,
+          it is among the greatest examples of Georgian architecture to be found in the United Kingdom.
+          The 150 m crescent was the first crescent of terraced houses to be built, and has stunning views over the parkland opposite. 
+          Come and see the grandeur for yourself.</p>
+        <a class="directions-button" href="https://shorturl.at/euZ48" target="_blank" rel="noopener noreferrer">
+          <img class="map-icon" src="assets/map-icon.svg"/>
+          <span class="screenreader">Directions</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>© Juliet Facey 2022</footer>
+</body>
+</html>
